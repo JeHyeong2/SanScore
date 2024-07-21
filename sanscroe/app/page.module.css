@@ -5,6 +5,7 @@ height: 100vh;
 width: 100vw;
 }
 .overlay{
+    text-align: center;
     z-index: 1;
     position: absolute;
     height: 100vh;
@@ -12,14 +13,14 @@ width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .title{
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     margin-left: 3%;
     min-width: 90%;
     max-width: 95%;
-    height: auto;
+    height: 10%;
 }
 
 .teamBox{
@@ -33,5 +34,21 @@ width: 100vw;
     align-items: center;
 }
 .teamBoxItem{
+    overflow-x: auto;
     z-index: 0;
+    min-height: 78%;
+    max-height: 78%;
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 18px;
+}
+.textBox{
+    font-size: 1.5rem;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }

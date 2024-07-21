@@ -10,11 +10,16 @@ const pixel = localFont({
   variable :"--font-pixel"
 })
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children,modal }) {
   return (
     <html lang="en">
       <body className={pixel.className}>
-        {children}
+
+      {children}
+      {modal}
+
+        
+      
       </body>
     </html>
   );

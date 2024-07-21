@@ -1,0 +1,30 @@
+.modalBox{
+    font-size: 17px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 70vh;
+    border:3px solid rgba(8, 8, 8, 0.725);
+    border-radius: 3px;
+}
+
+.descripBox{
+    width: 65vw;
+    max-height: 40vh;
+    border: black solid;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.closeBtn{
+    margin-top: 1rem;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 3px;
+    color : white;
+    max-width: 17vw;
+    min-width: 17vw;
+    height: auto;
+}
