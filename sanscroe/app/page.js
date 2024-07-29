@@ -7,7 +7,7 @@ import teamBox from "../public/teamBox.png"
 import { connectDB } from "@/util/database";
 import Teams from "../components/teams";
 
-
+export const revalidate = 20;
 
 export default async function Home() {
   

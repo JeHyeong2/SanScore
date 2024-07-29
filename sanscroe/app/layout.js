@@ -54,6 +54,7 @@ export const metadata = {
 export const viewport = {
   themeColor: "#358ef6",
 };
+
 export default function RootLayout({ children,modal }) {
   return (
     <html lang="en">

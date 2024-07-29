@@ -9,8 +9,7 @@ export default async function TeamDetail (p){
     const result = await db.collection("team").find({team_num:p.params.teamnum}).toArray()
     
     let toJson = JSON.stringify(result[0])
-
     return(
-    <Modal key={p.params.teamnum} infomation = {toJson}/>
+    <Modal key={result.team_num} infomation = {toJson}/>
     )
 }

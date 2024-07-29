@@ -1,9 +1,7 @@
 'use client'
-
 import Link from "next/link"
 import styles from "../styles/teams.module.css"
 import { useRouter } from "next/navigation"
-export const dynamic = 'force-dynamic' 
 
 
 export default function Teams(props){
