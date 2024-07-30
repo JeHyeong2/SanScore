@@ -1,4 +1,4 @@
-// File: C:\Users\신제형\Desktop\SanScore\sanscroe\app\page.js
+// File: C:\Users\신제형\Desktop\SanScore\sanscore\app\page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

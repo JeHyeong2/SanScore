@@ -1,1 +1,1 @@
-{"/_not-found/page":"/_not-found","/manifest.json/route":"/manifest.json","/detail/[teamnum]/page":"/detail/[teamnum]","/@modal/(.)detail/[teamnum]/page":"/(.)detail/[teamnum]","/catch-all/page":"/catch-all","/web/manage/777/page":"/web/manage/777","/page":"/"}
+{"/_not-found/page":"/_not-found","/@modal/(.)detail/[teamnum]/page":"/(.)detail/[teamnum]","/catch-all/page":"/catch-all","/web/manage/777/page":"/web/manage/777","/manifest.json/route":"/manifest.json","/detail/[teamnum]/page":"/detail/[teamnum]","/page":"/"}
