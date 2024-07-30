@@ -1,0 +1,43 @@
+.scoreBox{
+    display:flex;
+    flex-direction:column;
+    background-color:#F5F5F5;
+    min-height:60vh;
+    border-radius:20px;
+    border:10px ridge black;
+    align-items:center;
+}
+
+
+.listBox{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    min-width: 20vw;
+    justify-content: space-around;
+}
+
+@media(max-width:1000px){
+    .listBox{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 255, 255);
+        margin: 20px;
+        min-width: 70vw;
+        max-height: 30vh;
+        justify-content: space-around;
+    }
+    .scoreBox{
+        display:flex;
+        flex-direction:column;
+        background-color:#F5F5F5;
+        min-height:60vh;
+        border-radius:20px;
+        border:10px ridge black;
+        align-items:center;
+        margin-top: 2rem;
+    }
+    
+    
+}

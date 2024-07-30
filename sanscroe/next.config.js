@@ -1,3 +1,4 @@
+const { redirect } = require("next/navigation");
 
 
 const withPWA = require("@ducanh2912/next-pwa").default({
@@ -12,5 +13,11 @@ const withPWA = require("@ducanh2912/next-pwa").default({
   }
 });
 
-const nextConfig ={}
+const nextConfig ={
+  // async redirects(){
+  //   return [
+  //     {permanent : false}
+  //   ]
+  // }
+}
 module.exports = withPWA(nextConfig);

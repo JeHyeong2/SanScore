@@ -1,28 +1,55 @@
 'use client'
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import styels from "../../../../styles/manage.module.css"
-
-
+import ScoreList from "@/components/scoreList"
+import AddScore from "@/components/addScore"
+import { useRouter } from "next/navigation"
 export default function Manage(){
 
     let [data,setData] = useState([])
-    
+    let [curS,setCurS] = useState(1)
+    let [load,setLoad] = useState(false)
+    let [change,setChange] = useState(false)
+
+    const changed = ()=>{
+        let go = !change
+        setChange(go)
+    }
+    const curNum = (num)=>{
+        setCurS(num)
+    }
+
+    const addRef = useRef();
+    const listRef = useRef();
+;
     useEffect(()=>{
-        console.log(data)
-    },[data])
+        const getInfo = ()=>{
+            fetch("/api/score")
+            .then(readstreamdata=>readstreamdata.json())
+            .then(json=>{setData(json)})
+            .then(()=>{
+                addRef && listRef ? setLoad(true) : ""
+            })
+            .catch((e)=>{console.log(e)})
+        }
+        getInfo()
+
+    },[curS,change])
+
+
 
     return(
-        <main className={styels.mainbox}>
-            점수주는창
-            <button onClick={()=>{
-                fetch("/api/score")
-                .then(readstreamdata=>readstreamdata.json()).then(json=>{
-                    setData(json)
-                    console.log(json)})
-                .catch((e)=>{
-                    console.log(e)
-                })
-            }}>정보줘</button>
+        <main>
+            {load ? <div className={styels.mainbox}>
+            <AddScore ref={addRef} curNum ={curS} refresh={changed}/>
+            <ScoreList ref={listRef} info ={data} curNum ={curNum}/>
+            </div> : 
+            <div>
+                <p>...Loading</p>
+            </div>
+           }
+            
+           
         </main>
     )
 }

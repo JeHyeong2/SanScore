@@ -4,3 +4,12 @@ body{
   padding: 0;
 }
 
+input{
+  font-family: inherit;
+  text-align: center;
+  border: 0px;
+}
+button{
+  font-family: inherit;
+  text-align: center;
+}
