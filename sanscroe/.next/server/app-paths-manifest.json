@@ -1,8 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/@modal/(.)detail/[teamnum]/page": "app/@modal/(.)detail/[teamnum]/page.js",
   "/manifest.json/route": "app/manifest.json/route.js",
   "/detail/[teamnum]/page": "app/detail/[teamnum]/page.js",
+  "/@modal/(.)detail/[teamnum]/page": "app/@modal/(.)detail/[teamnum]/page.js",
   "/catch-all/page": "app/catch-all/page.js",
   "/web/manage/777/page": "app/web/manage/777/page.js",
   "/page": "app/page.js"
