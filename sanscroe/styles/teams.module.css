@@ -3,8 +3,32 @@
     display: flex;
     width: 60vw;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 1.2rem;
-    border: 3px solid gray;
+    border: 5px solid rgb(166, 164, 164);
     margin-right: 0.5rem;
-    border-radius: 0.2rem;
+    border-radius: 0.4rem;
+    min-height: 8vh;
+    font-size:1.3rem;
+}
+
+
+@media(min-width:500px){
+    .teamItem{
+        background-color: rgb(242, 242, 242);
+        display: flex;
+        width: 60vw;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        border: 10px solid gray;
+        margin-right: 0.5rem;
+        border-radius: 0.2rem;
+        min-height: 8vh;
+        font-size:2.1rem;
+    }
+}
+
+.teamItem :active{
+    background-color: bisque;
 }
