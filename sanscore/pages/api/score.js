@@ -18,8 +18,13 @@ export default async function handler(request,response){
                
                 if(body.info.get){
                         let sendInfo = now.map((el)=>{
+                                if(el.score_description === null){
+                                        el.score_description = [body.info]
+                                }else{
+                                        el.score_description.push(body.info)
+                                }
                                 el.team_score += body.info.score
-                                el.score_description.push(body.info)
+                                
                                 return el
                         })
                         let result = await db.collection("team").updateOne({team_num :body.teamNum},{$set :{team_score:sendInfo[0].team_score , score_description:sendInfo[0].score_description}})
@@ -30,7 +35,13 @@ export default async function handler(request,response){
                                 }else{
                                         el.team_score = 0
                                 }
-                                el.score_description.push(body.info)
+
+                                if(el.score_description === null){
+                                        el.score_description = [body.info]
+                                }else{
+                                        el.score_description.push(body.info)
+                                }
+
                                 return el
                         })
                         let result = await db.collection("team").updateOne({team_num :body.teamNum},{$set :{team_score:sendInfo[0].team_score , score_description:sendInfo[0].score_description}})

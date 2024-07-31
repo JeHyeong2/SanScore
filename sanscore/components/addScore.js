@@ -58,7 +58,7 @@ export default function AddScore({curNum,refresh}){
                 <div className={styles.descriptionBox}>
                     <p style={{margin:"1rem",fontSize:"1.2rem"}}>점수상세</p>
                     
-                    <input className={styles.descriptionInput} onChange={onChangeDescript} placeholder="내용을 입력하세요."/>
+                    <input className={styles.descriptionInput} onChange={onChangeDescript} value={scoreDescription} placeholder="내용을 입력하세요."/>
 
                 </div>
 
@@ -70,37 +70,61 @@ export default function AddScore({curNum,refresh}){
                     <button
                     className={styles.minusBtn}
                     onClick={()=>{
-                        fetch("/api/score",{
-                            method:"POST",
-                            body:JSON.stringify({
-                                teamNum:curNum,
-                                info:{  description:scoreDescription,
-                                        get:false,
-                                        score:score}    
+
+                        if(score > 0){
+
+                            fetch("/api/score",{
+                                method:"POST",
+                                body:JSON.stringify({
+                                    teamNum:curNum,
+                                    info:{  description:scoreDescription,
+                                            get:false,
+                                            score:score}    
+                                })
+                            }).then(()=>{
+                                refresh()
+                                let a = ""
+                                setScoreDescription(a)
+                                setScore(100)
+                                alert("점수가 반영되었습니다.")
+                            }).catch((e)=>{
+                                console.log(e)
                             })
-                        }).then(()=>{
-                            refresh()
-                        }).catch((e)=>{
-                            console.log(e)
-                        })
+
+                        }else{
+                            alert("점수를 입력해주세요.")
+                        }
+                        
                     }}
                     >감점</button>
                     <button
                     className={styles.plusBtn}
                     onClick={()=>{
-                        fetch("/api/score",{
-                            method:"POST",
-                            body:JSON.stringify({
-                                teamNum:curNum,
-                                info:{  description:scoreDescription,
-                                        get:true,
-                                        score:score}    
+
+                        if(score >0){
+
+                            fetch("/api/score",{
+                                method:"POST",
+                                body:JSON.stringify({
+                                    teamNum:curNum,
+                                    info:{  description:scoreDescription,
+                                            get:true,
+                                            score:score}    
+                                })
+                            }).then(()=>{
+                                refresh()
+                                let a = ""
+                                setScoreDescription(a)
+                                setScore(100)
+                                alert("점수가 반영되었습니다.")
+                           }).catch((e)=>{
+                                console.log(e)
                             })
-                        }).then(()=>{
-                            refresh()
-                       }).catch((e)=>{
-                            console.log(e)
-                        })
+
+                        }else{
+                            alert("점수를 입력해주세요")
+                        }
+                        
                     }}>추가</button>
                 </div>
             </div>

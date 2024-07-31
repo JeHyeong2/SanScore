@@ -34,7 +34,7 @@ export default function Modal({infomation}){
             <p>상세내역</p>
             <div className={styles.descripBox}>
                 {
-                info.score_description.length > 0 ?
+                info.score_description!=null && info.score_description.length > 0  ?
                 info.score_description.map((el,i)=>{
                     return(
                         <p key={i}>{el.get ? <span style={{color:"blue"}}>+</span> : <span style={{color:"red"}}>-</span>}  {el.score} {el.description}</p>
