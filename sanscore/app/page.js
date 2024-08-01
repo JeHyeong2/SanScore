@@ -6,7 +6,8 @@ import teamBox from "../public/teamBox.png"
 import { connectDB } from "@/util/database";
 import Teams from "../components/teams";
 
-export const revalidate = 20;
+
+export const revalidate = 10;
 
 export default async function Home() {
   
@@ -63,9 +64,9 @@ export default async function Home() {
               )
             })}
           </div>
-
-        </div>
        
+        </div>
+        <p style={{zIndex:3, position:"absolute",bottom:"10%",textAlign:"center"}}>점수 갱신은 10~20초가 소요됩니다.</p>
         <div className={styles.textBox}>
         <p style={{margin:"0"}}>산스 하계 체육대회
           <br/>
