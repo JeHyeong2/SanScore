@@ -1,7 +1,7 @@
 {   "id":"4",
     "name":"SanScore",
-    "short_name": "Ss",
-    "description":"산스코어!",
+    "short_name": "SanScore",
+    "description":"Sans 체육대회 점수판 SanScore입니다.",
    "icons": [
         {
             "src": "/icons/icon-192x192.png",

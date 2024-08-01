@@ -12,8 +12,9 @@ export default function Teams(props){
         <div className={styles.teamItem} onClick={()=>{
             router.push(`/detail/${p.team_num}`)}
             } >
-            <p>{p.team_num} 조</p>
-            <p>{p.team_score} 점</p>
+            <p style={{wordSpacing:"-4px",minWidth:"32%"}}>{p.team_num} 조</p>
+            <p style={{minWidth:"23%"}}>{p.team_score}</p>
+            <p>점</p>
         </div>
     )
 }

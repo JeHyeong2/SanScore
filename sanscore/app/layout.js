@@ -11,7 +11,7 @@ const pixel = localFont({
 
 const APP_NAME = "SanScore";
 const APP_DEFAULT_TITLE = "산스코어!!";
-const APP_TITLE_TEMPLATE = "Ss - PWA App";
+const APP_TITLE_TEMPLATE = "SanScore - PWA App";
 const APP_DESCRIPTION = "체육대회점수판!";
 
 
