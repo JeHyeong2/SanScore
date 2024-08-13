@@ -16,6 +16,22 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/@modal/(.)detail/[teamnum]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/@modal/(.)detail/[teamnum]/page.css",
+      "static/chunks/app/@modal/(.)detail/[teamnum]/page.js"
+    ],
+    "/@modal/(.)detail/[teamnum]/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/@modal/(.)detail/[teamnum]/loading.js"
+    ],
+    "/default": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/default.js"
     ]
   }
 }

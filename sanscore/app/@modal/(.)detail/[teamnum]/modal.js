@@ -45,7 +45,7 @@ export default function Modal({infomation}){
 
         </div>
 
-        <button className={styles.closeBtn} onClick={()=>{router.back()}} > 닫기 </button>
+        <button className={styles.closeBtn} onClick={()=>{router.back({scroll:false})}} > 닫기 </button>
 
         </dialog>
 
