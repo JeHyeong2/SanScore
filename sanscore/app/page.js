@@ -7,7 +7,7 @@ import { connectDB } from "@/util/database";
 import Teams from "../components/teams";
 
 
-export const revalidate = 10;
+export const revalidate = 1800;
 
 export default async function Home() {
   
@@ -27,6 +27,7 @@ export default async function Home() {
       return Number(a.team_Num) - Number(b.team_Num)
     }
     return b.team_score - a.team_score})
+  
 
 
 
@@ -60,13 +61,13 @@ export default async function Home() {
           <div className={styles.teamBoxItem}>
             {result.map((el,i)=>{
               return(
-                <Teams key={i} props = {el}/>
+                <Teams key={i} props = {el} num = {i}/>
               )
             })}
           </div>
        
         </div>
-        <p style={{zIndex:3, position:"absolute",bottom:"10%",textAlign:"center"}}>점수 갱신은 10~20초가 소요됩니다.</p>
+        <p style={{zIndex:3, position:"absolute",bottom:"10%",textAlign:"center"}}>점수판은 30분 단위로 갱신됩니다.</p>
         <div className={styles.textBox}>
         <p style={{margin:"0"}}>산스 하계 체육대회
           <br/>

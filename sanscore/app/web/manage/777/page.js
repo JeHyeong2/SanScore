@@ -10,7 +10,11 @@ export default function Manage(){
     let [curS,setCurS] = useState(1)
     let [load,setLoad] = useState(false)
     let [change,setChange] = useState(false)
+    let [curN,setCurN] = useState('불사조')
 
+    const curName = (name)=>{
+        setCurN(name)
+    }
     const changed = ()=>{
         let go = !change
         setChange(go)
@@ -34,15 +38,15 @@ export default function Manage(){
         }
         getInfo()
 
-    },[curS,change])
+    },[curS,change,curN])
 
 
 
     return(
         <main>
             {load ? <div className={styels.mainbox}>
-            <AddScore ref={addRef} curNum ={curS} refresh={changed}/>
-            <ScoreList ref={listRef} info ={data} curNum ={curNum}/>
+            <AddScore ref={addRef} curNum ={curS} curName={curN} refresh={changed}/>
+            <ScoreList ref={listRef} info ={data} curNum ={curNum} curName={curName}/>
             </div> : 
             <div>
                 <p>...Loading</p>

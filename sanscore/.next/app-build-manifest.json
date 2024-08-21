@@ -32,6 +32,12 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/default.js"
+    ],
+    "/web/manage/777/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/web/manage/777/page.css",
+      "static/chunks/app/web/manage/777/page.js"
     ]
   }
 }
