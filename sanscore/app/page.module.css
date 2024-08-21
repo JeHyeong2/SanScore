@@ -55,7 +55,7 @@ width: 100vw;
     margin-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .textBox{

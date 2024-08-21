@@ -29,7 +29,7 @@ export default function Modal({infomation}){
         >
         
         <div>
-            <p>{info.team_num} 조</p>
+            <p>{info.team_name}팀</p>
             <p> 총점 {info.team_score} 점</p>
             <p>상세내역</p>
             <div className={styles.descripBox}>

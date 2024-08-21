@@ -7,7 +7,7 @@ import minus from "../public/minus.svg"
 import styles from "../styles/addScore.module.css"
 import { useRouter } from "next/navigation"
 
-export default function AddScore({curNum,refresh}){
+export default function AddScore({curNum,refresh,curName}){
 
     const router = useRouter()
     const [scoreDescription,setScoreDescription] = useState("")
@@ -34,7 +34,7 @@ export default function AddScore({curNum,refresh}){
   
             <div className={styles.mainBox}>
                 <div>
-                <p style={{fontSize:"1.7rem",marginBottom:"5vh",fontWeight:"bold"}}>{curNum} 조</p>    
+                <p style={{fontSize:"1.7rem",marginBottom:"5vh",fontWeight:"bold"}}>{curName} 팀</p>    
                 </div>
                 
                 <p style={{margin:"0",fontSize:"1.2rem"}}>점수</p>

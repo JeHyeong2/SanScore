@@ -1,0 +1,199 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/manage.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.manage_mainbox__QukPQ{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 80vh;
+}
+
+@media(max-width:1000px){
+    .manage_mainbox__QukPQ{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        min-width: 90vw;
+        background-color: #ffffff;
+    }
+    
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/scorelist.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.scorelist_scoreBox__uCFhz{
+    display:flex;
+    flex-direction:column;
+    background-color:#F5F5F5;
+    min-height:60vh;
+    border-radius:20px;
+    border:10px ridge black;
+    align-items:center;
+}
+
+
+.scorelist_listBox__Rvfn4{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    min-width: 20vw;
+    justify-content: space-around;
+}
+
+@media(max-width:1000px){
+    .scorelist_listBox__Rvfn4{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 255, 255);
+        margin: 20px;
+        min-width: 70vw;
+        max-height: 30vh;
+        justify-content: space-around;
+    }
+    .scorelist_scoreBox__uCFhz{
+        display:flex;
+        flex-direction:column;
+        background-color:#F5F5F5;
+        min-height:60vh;
+        border-radius:20px;
+        border:10px ridge black;
+        align-items:center;
+        margin-top: 2rem;
+    }
+    
+    
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/addScore.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.addScore_plusIcon__vQjR6{
+    width: 5vw;
+    max-height: 7.5vh;
+}
+.addScore_minusIcon__r2yGm{
+    width: 4vw;
+    max-height: 5vh;
+}
+
+.addScore_iconBox__9vkYt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+.addScore_pointInput__P4YQP{
+    border-radius:10px;
+    border:0px;
+    text-align:center;
+    width:10vw;
+    font-size:1.8rem;
+    margin:3%;
+    height:7vh;
+}
+
+.addScore_mainBox__1PNAw{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F5F5F5;
+    min-height: 60vh;
+    min-width: 40vw;
+    border-radius: 20px;
+    border: 10px ridge white;
+}
+.addScore_descriptionBox__9zuoq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.addScore_descriptionInput__ZRchD{
+    width:20vw;
+    min-height:13vh;
+    border-radius:10px;
+    font-size:1rem;
+}
+
+
+.addScore_btnBox__dRV0R{
+    margin-top: 1rem;
+    display: flex;
+    min-width: 40vw;
+    justify-content: space-evenly;
+}
+.addScore_btnBox__dRV0R > button{
+    min-height: 7vh;
+    color: white;
+    min-width: 5vw;
+    border: 0;
+    border-radius: 5px;
+}
+
+.addScore_minusBtn__6dUFj{
+    background-color: #FF6262;
+}
+.addScore_plusBtn__nvE0G{
+    background-color: #5259FF;
+}
+
+@media(max-width:1000px){
+    .addScore_mainBox__1PNAw{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #F5F5F5;
+        min-height: 60vh;
+        min-width: 80vw;
+        border-radius: 20px;
+        border: 10px ridge rgb(0, 0, 0);
+        margin-bottom: 3rem;
+    }
+    .addScore_btnBox__dRV0R{
+        margin-top: 1rem;
+        display: flex;
+        min-width: 80vw;
+        justify-content: space-evenly;
+    }
+    .addScore_btnBox__dRV0R > button{
+        min-height: 7vh;
+        color: white;
+        min-width: 18vw;
+        border: 0;
+        border-radius: 5px;
+    }
+    
+.addScore_pointInput__P4YQP{
+    border-radius:10px;
+    border:0px;
+    text-align:center;
+    width:25vw;
+    font-size:1.8rem;
+    margin:3%;
+    height:7vh;
+}
+.addScore_plusIcon__vQjR6{
+    width: 10vw;
+    max-height: 7.5vh;
+}
+.addScore_minusIcon__r2yGm{
+    width: 10vw;
+    max-height: 7.5vh;
+}
+.addScore_descriptionInput__ZRchD{
+    width:70vw;
+    min-height:13vh;
+    border-radius:10px;
+    font-size:1rem;
+}
+
+}

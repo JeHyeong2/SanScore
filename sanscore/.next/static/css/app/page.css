@@ -58,7 +58,7 @@ width: 100vw;
     margin-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .page_textBox__qxzJV{
@@ -85,19 +85,25 @@ width: 100vw;
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/teams.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
 .teams_teamItem__BDC5L{
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
     display: flex;
     width: 60vw;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 1.2rem;
-    border: 5px solid rgb(166, 164, 164);
+    border: 5px solid #a6a4a4;
     margin-right: 0.5rem;
     border-radius: 0.4rem;
     min-height: 8vh;
-    font-size:1.4rem;
+    font-size:1.3rem;
 }
 
+.teams_teamimg__9h8ds{
+    max-width: 15vw;
+    max-height: 8vh;
+    background-color:#f2f2f2 ;
+    margin: 0;
+}
 
 @media(min-width:500px){
     .teams_teamItem__BDC5L{
