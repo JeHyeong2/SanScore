@@ -1,1 +1,5 @@
-{}
+{
+  "/page": "app/page.js",
+  "/manifest.json/route": "app/manifest.json/route.js",
+  "/@modal/(.)detail/[teamnum]/page": "app/@modal/(.)detail/[teamnum]/page.js"
+}

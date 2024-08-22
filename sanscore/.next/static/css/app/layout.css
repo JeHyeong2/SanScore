@@ -1,0 +1,31 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"app\\layout.js","import":"","arguments":[{"src":"../public/font/DungGeunMo.ttf","display":"swap","weight":"400","variable":"--font-pixel"}],"variableName":"pixel"} ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: '__pixel_5f19ad';
+src: url(/_next/static/media/47fa802587c04043-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 400;
+}@font-face {font-family: '__pixel_Fallback_5f19ad';src: local("Arial");ascent-override: 74.15%;descent-override: 17.11%;line-gap-override: 0.00%;size-adjust: 109.58%
+}.__className_5f19ad {font-family: '__pixel_5f19ad', '__pixel_Fallback_5f19ad';font-weight: 400
+}.__variable_5f19ad {--font-pixel: '__pixel_5f19ad', '__pixel_Fallback_5f19ad'
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  font-family: inherit;
+  text-align: center;
+  border: 0px;
+}
+button{
+  font-family: inherit;
+  text-align: center;
+}
