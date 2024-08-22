@@ -67,7 +67,7 @@ export default async function Home() {
           </div>
        
         </div>
-        <p style={{zIndex:3, position:"absolute",bottom:"10%",textAlign:"center"}}>점수판은 30분 단위로 갱신됩니다.</p>
+        <p style={{zIndex:3, position:"absolute",bottom:"10%",textAlign:"center"}}>점수판은 랭킹은 30분단위로 갱신됩니다.</p>
         <div className={styles.textBox}>
         <p style={{margin:"0"}}>산스 하계 체육대회
           <br/>
