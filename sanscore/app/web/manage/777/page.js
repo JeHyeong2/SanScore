@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation"
 export default function Manage(){
 
     let [data,setData] = useState([])
-    let [curS,setCurS] = useState(1)
+    let [curS,setCurS] = useState('1')
     let [load,setLoad] = useState(false)
     let [change,setChange] = useState(false)
     let [curN,setCurN] = useState('불사조')

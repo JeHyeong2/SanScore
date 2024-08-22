@@ -72,7 +72,7 @@ export default function AddScore({curNum,refresh,curName}){
                     onClick={()=>{
 
                         if(score > 0){
-
+                            console.log(curNum)
                             fetch("/api/score",{
                                 method:"POST",
                                 body:JSON.stringify({
