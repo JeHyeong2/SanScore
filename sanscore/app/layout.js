@@ -3,14 +3,14 @@ import localFont from"next/font/local"
 
   
 const pixel = localFont({
-  src: "../public/font/DungGeunMo.ttf",
+  src: "../public/font/DNFBitBitTTF.ttf",
   display:"swap",
   weight :"400",
   variable :"--font-pixel"
 })
 
 const APP_NAME = "SanScore";
-const APP_DEFAULT_TITLE = "산스코어!!";
+const APP_DEFAULT_TITLE = "SanScore";
 const APP_TITLE_TEMPLATE = "SanScore - PWA App";
 const APP_DESCRIPTION = "체육대회점수판!";
 
