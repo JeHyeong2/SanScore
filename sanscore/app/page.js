@@ -10,7 +10,7 @@ import silver from "../public/silver.svg"
 import gold from "../public/gold.svg"
 
 
-// export const revalidate = 300;
+export const revalidate = 0;
 
 export default async function Home() {
   
@@ -32,7 +32,7 @@ export default async function Home() {
     return b.team_score - a.team_score})
   
 
-
+  console.log(result)
 
   return (
     <div className={styles.background}>
