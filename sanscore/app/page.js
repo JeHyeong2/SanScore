@@ -10,7 +10,7 @@ import silver from "../public/silver.svg"
 import gold from "../public/gold.svg"
 
 
-export const revalidate = 300;
+// export const revalidate = 300;
 
 export default async function Home() {
   
