@@ -1,0 +1,8 @@
+{
+  "root": "sanscore",
+  "buildCommand": "npm run build",
+  "startCommand": "npm start",
+  "env": {
+    "MONGODB_URI": "@mongodb_uri"
+  }
+}
