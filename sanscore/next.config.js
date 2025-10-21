@@ -10,6 +10,7 @@ const withPWA = require("@ducanh2912/next-pwa").default({
   swcMinify:true,
   workboxOptions:{
     disableDevLogs: true,
+    maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
   }
 });
 

@@ -11,13 +11,13 @@ export default function Teams(props){
    
     const rank = (num)=>{
         if(num=== 0 && p.team_score){
-            return "5px solid #FFD66E;"
+            return "5px solid #FFD66E"
         }else if(num === 1 && p.team_score){
-            return "5px solid #C1C1C1;"
+            return "5px solid #C1C1C1"
         }else if(num=== 2 && p.team_score){
-            return "5px solid #CAA17B;"
+            return "5px solid #CAA17B"
         }
-        return "3.5px solid #ED1B76;"
+        return "3.5px solid #ED1B76"
     }
 
     return(
