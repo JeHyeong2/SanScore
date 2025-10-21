@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb'
 
-const url = 'mongodb+srv://ShinBro:akfls123@shindb.gk0qr7i.mongodb.net/?retryWrites=true&w=majority&appName=ShinDB'
+const url = process.env.MONGODB_URI
 const options = { useNewUrlParser: true }
 let connectDB
 
